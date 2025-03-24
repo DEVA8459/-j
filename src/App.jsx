@@ -1,14 +1,10 @@
 import Body from "./component/Body";
-import { createBrowserRouter, RouterProvider} from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Login from "./component/Login";
 import Browser from "./component/Browse";
-import DisplayPage from "./component/displayPage";
-
+import DisplayPage from "./component/DisplayPage";
 
 function App() {
- 
- 
-
   const appRouter = createBrowserRouter([
     {
       path: "/",
@@ -30,10 +26,9 @@ function App() {
     },
   ]);
 
- 
   return (
     <>
-      <div >
+      <div>
         <RouterProvider router={appRouter} />
       </div>
     </>
